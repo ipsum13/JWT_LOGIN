@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "client-install": "npm install --prefix frontEnd",
+    "client-install": "npm install --prefix client",
     "start": "node app.js",
     "server": "nodemon app.js",
-    "client": "npm start --prefix frontEnd",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
