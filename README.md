@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # JWT_Authentication_MERN
 =======
+=======
+>>>>>>> e422ffd5a4229cfe142db7bb60e13c6e21356556
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -69,4 +72,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<< HEAD
 >>>>>>> First commit
+=======
+>>>>>>> e422ffd5a4229cfe142db7bb60e13c6e21356556
