@@ -1,12 +1,14 @@
 {
   "name": "server",
   "version": "0.0.0",
+  "main": "app.js",
   "private": true,
   "scripts": {
-    "client-install": "npm install --prefix frontEnd",
-    "start": "node app.js",
+    "client-install": "npm install --prefix client",
     "server": "nodemon app.js",
-    "client": "npm start --prefix frontEnd",
+    "start": "nodemon app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
