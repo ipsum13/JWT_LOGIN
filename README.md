@@ -1,78 +1,147 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# JWT_Authentication_MERN
-=======
-=======
->>>>>>> e422ffd5a4229cfe142db7bb60e13c6e21356556
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MERN JWT Authentication
 
-## Available Scripts
+MERN JWT Authentication is a minimal full-stack login/authorization app developed using the `MERN` stack (`MongoDB` for our database, `Express` and `Node` for our backend, and `React` for our frontend). Also integrate `Redux` for state management for our `React` components.
 
-In the project directory, you can run:
+## :link: Live Demo
 
-### `npm start`
+Here's a [live demo](https://mern-jwt-login.herokuapp.com/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center"> 
+  <kbd>
+<img src="https://res.cloudinary.com/sam13/image/upload/v1614530452/signup_rf98dh.png"></img>
+  </kbd>
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center"> 
+  <kbd>
+<img src="https://res.cloudinary.com/sam13/image/upload/v1614530446/signin_bjhorp.png"></img>
+  </kbd>
+</p>
 
-### `npm test`
+<p align="center"> 
+  <kbd>
+<img src="https://res.cloudinary.com/sam13/image/upload/v1614530459/screen_evc9bd.png"></img>
+  </kbd>
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**MERN JWT Authentication app will allow users to**
 
-### `npm run build`
+- Register
+- Log in
+- Access protected pages only accessible to logged in users
+- Stay logged in when they close the app or refresh the page
+- Log out
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements
 
-### `npm run eject`
+##### **Prerequisites**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You should have at least a basic understanding of fundamental programming concepts and some experience with introductory [`HTML`](https://developer.mozilla.org/en-US/docs/Web/HTML)/[`CSS`](https://developer.mozilla.org/en-US/docs/Learn/CSS)/[`Javascript`](https://developer.mozilla.org/en-US/docs/Web/JavaScript). And the knowledge of `MERN` stack  ([`Mongo`](https://university.mongodb.com/), [`Express`](https://expressjs.com/), [`React`](https://reactjs.org/), [`Node`](https://nodejs.dev/)) is an advantage.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### **Install**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Lastly, make sure you have the following installed.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Latest version of [Node.js](https://nodejs.org/en/)
+- Latest version of [NPM (Node Package Manage)](https://www.npmjs.com/get-npm)
+- Latest version of [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+- Latest version of [git](https://git-scm.com/) (**This is optional. It requires only if you choose to clone project**)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Getting Started
 
-### Code Splitting
+1. Either you can **clone** or **download** repository from GitHub.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+   - Clone with HTTPS *(required [git](https://git-scm.com/) installed in your system)*
 
-### Analyzing the Bundle Size
+     ```shell
+     git clone https://github.com/ipsum13/JWT_LOGIN.git
+     ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+   - Clone with SSH *(required [git](https://git-scm.com/) installed in your system)*
 
-### Making a Progressive Web App
+     ```sh
+     git clone git@github.com:ipsum13/JWT_LOGIN.git
+     ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+   - [Download Zip](https://github.com/ipsum13/JWT_LOGIN/archive/master.zip)
 
-### Advanced Configuration
+2. Navigate to project directory in the terminal or command prompt.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+   ```shell
+   cd jwt_login
+   ```
 
-### Deployment
+3. Install project dependencies
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+   ```shell
+   npm i && npm run client-install
+   ```
 
-### `npm run build` fails to minify
+4. Create a `keys.js` file in `config` directory
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-<<<<<<< HEAD
->>>>>>> First commit
-=======
->>>>>>> e422ffd5a4229cfe142db7bb60e13c6e21356556
+   - create the config.env file 
+
+   **Note:** update `config.env` file variables as per the requirements.
+
+5. Run the project server
+
+   - Run development server (*it runs both **frontend** and **backend** server together at same time*)
+
+     ```shell
+     npm run dev
+     ```
+
+   - Run **backend** development server
+
+     ```shell
+     npm run server
+     ```
+
+   - Run **frontend** development server
+
+     ```shell
+     npm run client
+     ```
+
+   - Run **production** server
+
+     - Build and run the production server
+
+       ```shell
+       npm run build-prod
+       ```
+
+     **OR**
+
+     - Create build first
+
+       ```shell
+       npm run build
+       ```
+
+       Run the production server
+
+       ```shell
+       npm run prod
+       ```   
+
+6. Project server is running at:
+
+   - **Development**
+     - Frontend server is running at [http://localhost:3000](http://localhost:3000)
+     - Backend server is running at [http://localhost:5000](http://localhost:5000)
+
+   - **Production** server is running at [http://localhost:5000](http://localhost:5000)
+
+
+#### Contributing
+
+1. Fork it ( https://github.com/ipsum13/JWT_LOGIN/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new pull request.
